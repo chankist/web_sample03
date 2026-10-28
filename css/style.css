@@ -165,6 +165,11 @@ nav a:hover {
     margin-left: 5px;
 }
 
+.navy-btn {
+    background-color: #003366;
+    color: white;
+}
+
 .watermark {
     position: absolute;
     right: 15px;
@@ -353,4 +358,131 @@ footer {
 }
 
 
-/*게시판 페이지 디자인*/
+/*게시판 목록 디자인*/
+
+/*페이지 제목 배너*/
+.pagetitle {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dbe2ea;
+    margin-bottom: 25px;
+    align-items: end;
+}
+
+.pagetitle small {
+    font-size: 12px;
+    color: #2563a8;
+}
+
+.pagetitle h1 {
+    font-size: 26px;
+    color: #1e293b;
+}
+
+.pagetitle p {
+    font-size: 12px;
+    color: #64748b;
+}
+
+/*게시판 검색 디자인*/
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+
+select, input {
+    font-family: inherit;
+    font-size: 13px;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.search input {
+    width: 220px;
+}
+
+.tablebox {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f1f5f9;
+    color: #334155;   
+    padding: 13px;
+    border-bottom: 2px solid #cbd5e1;
+}
+
+td {
+    padding: 14px;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+.pinned {
+    background-color: #eff6ff;
+}
+
+td em {
+    background-color: #fee2e2;
+    border-radius: 4px;
+    font-style: normal;
+    font-size: 11px;
+    padding: 2px 7px;
+    color: #b91c19;
+}
+
+td label {
+    padding: 2px 7px;
+    background-color: #f1f5f9;
+    border-radius: 4px;
+    color: #475569;
+    font-size: 11px;
+}
+
+td:nth-child(3) {/*tr내 td중 3번째 td만 선택*/
+    text-align: left;
+}
+
+/*게시판 목록 하단 페이지 번호 디자인*/
+.borderbottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.pages {
+    display: flex;
+    gap: 5px;
+}
+
+.pages a {
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    text-align: center;
+    background-color: white;
+    padding: 5px 8px;
+}
+
+.pages .selected {/*선택된 디자인 변경*/
+    background-color: #003366;
+    color: white;
+}
